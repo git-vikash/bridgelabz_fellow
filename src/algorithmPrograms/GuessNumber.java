@@ -8,11 +8,11 @@ public class GuessNumber {
 	
 
 	static int find(int number) {
-		
+		System.out.println("Guess a number between 0-"+(number-1)+"\n");
 		int low = 0, high = number-1, mid;
 		while (low != high) {
 			mid = (low + high) / 2;
-			System.out.println("1.guess less than:" + mid + "\n2. guess greater than:"+mid);
+			System.out.println("1.guess less than or same as:" + mid + "\n2. guess greater than:"+mid);
 					
 			int c = Utility.inputInteger();
 			

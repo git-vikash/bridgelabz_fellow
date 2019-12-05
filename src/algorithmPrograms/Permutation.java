@@ -1,6 +1,8 @@
 package algorithmPrograms;
 
 
+import java.util.ArrayList;
+import java.util.List;
 //import java.util.ArrayList;
 //import java.util.List;
 import java.util.Scanner;
@@ -62,19 +64,20 @@ public class Permutation
 	
 	
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) {//-------------------------------------------------------main------------------------
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter String to get permutation");
 		String str1=sc.nextLine();
 		
 		int n=str1.length();
 		permuteRecursion(str1,0,n);
+		//permute(str1);
 		sc.close();
-	/*	
+		
 		//permute(str1);
 		int count=0;
 	    List<String> results = new ArrayList<String>();
-	    String test_str = "abcde";
+	    String test_str = "abc";
 	    char[] chars = test_str.toCharArray();
 	    results.add(new String("" + chars[0]));
 	    for(int j=1; j<chars.length; j++) {
@@ -91,6 +94,6 @@ public class Permutation
 	    }
 	    System.out.println("Number of Permutations: " + results.size()+", iterate:"+count);
 	    System.out.println(results);
-	    */
+	    
 	}
 }
